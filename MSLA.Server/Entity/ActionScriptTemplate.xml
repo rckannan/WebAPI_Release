@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScriptTemplate>
+    <MasterAddUpdate>
+        Declare @Overwrite Bit
+        Select @Overwrite=1
+        IF ?PrimaryKeyParam=-1
+        BEGIN
+        exec ?Database.System.spGetMasterID '?Schema.?TableName', @ID=?PrimaryKeyParam output
+        IF @@Error &lt;&gt; 0
+        return
+
+        Set @LastUpdated = convert(datetime,convert(varchar,getdate(),120))
+
+        INSERT INTO ?Database.?Schema.?TableName(?FieldList)
+        VALUES(?ParamList)
+        END
+        ELSE
+        BEGIN
+        IF @Overwrite=0
+        BEGIN
+        IF @LastUpdated &lt;&gt; (Select fldLastUpdated from ?Database.?Schema.?TableName where
+        ?PrimaryKeyField = ?PrimaryKeyParam)
+        RAISERROR(50001,16,1)
+        END
+
+        Set @LastUpdated = convert(datetime,convert(varchar,getdate(),120))
+
+        UPDATE ?Database.?Schema.?TableName
+        SET ?UpdateFieldParamList
+        where ?PrimaryKeyField=?PrimaryKeyParam
+        END
+    </MasterAddUpdate>
+
+    <DocControlAddUpdate>
+        Declare @Overwrite Bit, @ErrMsg Varchar(500), @Month Varchar(3), @V_ID bigint
+        Select @Overwrite=1, @ErrMsg = '', @Month='', @V_ID=-1
+
+        If ?PrimaryKeyParam = ''
+        Begin
+        --	****	Fetch Sequence
+        Update ?Database.?Schema.?SequenceTable
+        Set fldBit=1
+        Where fldYear=@Year and @Date&gt;=fldDateFrom and @Date&lt;=fldDateTo and fldType=@Type and fldBranch_ID=@Branch_ID
+
+        Select @V_ID=fldMaxVoucherNo + 1, @Month=fldMonth
+        From ?Database.?Schema.?SequenceTable
+        Where fldYear=@Year and @Date&gt;=fldDateFrom and @Date&lt;=fldDateTo and fldType=@Type and fldBranch_ID=@Branch_ID
+
+        If @V_ID = -1
+        Begin
+        Select @ErrMsg = 'Sequence entry for ' + @Type + ' not found in ?Schema.?SequenceTable for document dated ' + Convert(Varchar(50), @Date);
+        Raiserror(@ErrMsg, 16, 1);
+        Return;
+        End
+
+        Update ?Database.?Schema.?SequenceTable
+        Set fldMaxVoucherNo = @V_ID,
+        fldBit=0
+        Where fldYear=@Year and @Date&gt;=fldDateFrom and @Date&lt;=fldDateTo and fldType=@Type and fldBranch_ID=@Branch_ID
+
+
+        --	****	Create Voucher_ID
+        Exec ?Database.System.spCreateDocID @Type, @Branch_ID, @Year, @Month, @V_ID, @Doc_ID=?PrimaryKeyParam Output
+        Set @LastUpdated = convert(Datetime,convert(Varchar,getdate(),120))
+
+
+        Insert Into ?Database.?Schema.?TableName (?FieldList)
+        Values (?ParamList)
+        End
+        Else
+        Begin
+
+        Declare @StatusChanged Bit
+        Exec ?Database.System.spVerifyStatus ?PrimaryKeyParam, '?PrimaryKeyField', '?Schema.?TableName', @Status, @StatusChanged=@StatusChanged Output
+        If @StatusChanged = 1
+        Begin
+        Select @ErrMsg = 'Document Status Changed for Document No. ' + ?PrimaryKeyParam + '.';
+        Raiserror(@ErrMsg, 16,1);
+        Return;
+        End
+
+        If @Overwrite=0
+        Begin
+        Declare @Modified Bit
+        Exec ?Database.System.spVerifyIsCurrent ?PrimaryKeyParam, '?PrimaryKeyField', '?Schema.?TableName', @LastUpdated, @Modified=@Modified Output
+        If @Modified = 1
+        Begin
+        Raiserror(50001, 16,1)
+        Return
+        End
+        End
+        Set @LastUpdated = convert(Datetime,convert(Varchar,getdate(),120))
+
+        Update ?Database.?Schema.?TableName
+        Set ?UpdateFieldParamList
+        Where ?PrimaryKeyField = ?PrimaryKeyParam
+        End
+    </DocControlAddUpdate>
+
+    <TranAdd>
+        INSERT INTO ?Database.?Schema.?TableName
+        (?FieldList)
+        VALUES
+        (?ParamList)
+    </TranAdd>
+
+    <FetchStatement>
+        Select ?FieldList
+        from ?Database.?Schema.?TableName
+        where ?PrimaryKeyField=?PrimaryKeyParam
+    </FetchStatement>
+
+    <DeleteScript>
+        Delete From ?Database.?Schema.?TableName
+        Where ?PrimaryKeyField=?PrimaryKeyParam
+    </DeleteScript>
+
+</ScriptTemplate>

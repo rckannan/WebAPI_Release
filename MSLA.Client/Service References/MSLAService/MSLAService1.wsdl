@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MSLAService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="CustomBinding_IMSLAService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server_WebService" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Rules" />
+      <xsd:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Tools" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMSLAService_TryLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:TryLogin" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_TryLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TryLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_LogOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:LogOut" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_LogOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_TryLoginMain_InputMessage">
+    <wsdl:part name="parameters" element="tns:TryLoginMain" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_TryLoginMain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TryLoginMainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_TryLoginUPA_InputMessage">
+    <wsdl:part name="parameters" element="tns:TryLoginUPA" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_TryLoginUPA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TryLoginUPAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_FillDt_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillDt" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_FillDt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillDtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ExecuteCMM_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteCMM" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ExecuteCMM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteCMMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ExecuteScalar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalar" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ExecuteScalar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_FetchBOMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchBOMaster" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_FetchBOMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchBOMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_FetchBOMaster_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System" name="detail" element="q1:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_SaveBOMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBOMaster" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_SaveBOMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBOMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_DeleteBOMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBOMaster" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_DeleteBOMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBOMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ResolveTablesFromFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResolveTablesFromFile" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ResolveTablesFromFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResolveTablesFromFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_HandleException_InputMessage">
+    <wsdl:part name="parameters" element="tns:HandleException" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_HandleException_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HandleExceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_InvokeMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeMethod" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_InvokeMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSerivceInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSerivceInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSerivceInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSerivceInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSerivceLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSerivceLog" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSerivceLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSerivceLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSerivceLogFromID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSerivceLogFromID" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSerivceLogFromID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSerivceLogFromIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetResultSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultSet" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetResultSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSelectValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectValue" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSelectValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSelectText_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectText" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetSelectText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetCategoryFeed_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryFeed" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetCategoryFeed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryFeedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetCategoryFeedItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryFeedItems" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetCategoryFeedItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryFeedItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetCategoryContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryContract" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_GetCategoryContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ContractSubscriptionService_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContractSubscriptionService" />
+  </wsdl:message>
+  <wsdl:message name="IMSLAService_ContractSubscriptionService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContractSubscriptionServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMSLAService">
+    <wsdl:operation name="TryLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/TryLogin" message="tns:IMSLAService_TryLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/TryLoginResponse" message="tns:IMSLAService_TryLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/LogOut" message="tns:IMSLAService_LogOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/LogOutResponse" message="tns:IMSLAService_LogOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TryLoginMain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/TryLoginMain" message="tns:IMSLAService_TryLoginMain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/TryLoginMainResponse" message="tns:IMSLAService_TryLoginMain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TryLoginUPA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/TryLoginUPA" message="tns:IMSLAService_TryLoginUPA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/TryLoginUPAResponse" message="tns:IMSLAService_TryLoginUPA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillDt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/FillDt" message="tns:IMSLAService_FillDt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/FillDtResponse" message="tns:IMSLAService_FillDt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteCMM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/ExecuteCMM" message="tns:IMSLAService_ExecuteCMM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/ExecuteCMMResponse" message="tns:IMSLAService_ExecuteCMM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/ExecuteScalar" message="tns:IMSLAService_ExecuteScalar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/ExecuteScalarResponse" message="tns:IMSLAService_ExecuteScalar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchBOMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/FetchBOMaster" message="tns:IMSLAService_FetchBOMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/FetchBOMasterResponse" message="tns:IMSLAService_FetchBOMaster_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IMSLAService/FetchBOMasterExceptionFault" name="ExceptionFault" message="tns:IMSLAService_FetchBOMaster_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBOMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/SaveBOMaster" message="tns:IMSLAService_SaveBOMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/SaveBOMasterResponse" message="tns:IMSLAService_SaveBOMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBOMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/DeleteBOMaster" message="tns:IMSLAService_DeleteBOMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/DeleteBOMasterResponse" message="tns:IMSLAService_DeleteBOMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResolveTablesFromFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/ResolveTablesFromFile" message="tns:IMSLAService_ResolveTablesFromFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/ResolveTablesFromFileResponse" message="tns:IMSLAService_ResolveTablesFromFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HandleException">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/HandleException" message="tns:IMSLAService_HandleException_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/HandleExceptionResponse" message="tns:IMSLAService_HandleException_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvokeMethod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/InvokeMethod" message="tns:IMSLAService_InvokeMethod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/InvokeMethodResponse" message="tns:IMSLAService_InvokeMethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSerivceInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetSerivceInfo" message="tns:IMSLAService_GetSerivceInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetSerivceInfoResponse" message="tns:IMSLAService_GetSerivceInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSerivceLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetSerivceLog" message="tns:IMSLAService_GetSerivceLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetSerivceLogResponse" message="tns:IMSLAService_GetSerivceLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSerivceLogFromID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetSerivceLogFromID" message="tns:IMSLAService_GetSerivceLogFromID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetSerivceLogFromIDResponse" message="tns:IMSLAService_GetSerivceLogFromID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetResultSet" message="tns:IMSLAService_GetResultSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetResultSetResponse" message="tns:IMSLAService_GetResultSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetSelectValue" message="tns:IMSLAService_GetSelectValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetSelectValueResponse" message="tns:IMSLAService_GetSelectValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetSelectText" message="tns:IMSLAService_GetSelectText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetSelectTextResponse" message="tns:IMSLAService_GetSelectText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryFeed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetCategoryFeed" message="tns:IMSLAService_GetCategoryFeed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetCategoryFeedResponse" message="tns:IMSLAService_GetCategoryFeed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryFeedItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetCategoryFeedItems" message="tns:IMSLAService_GetCategoryFeedItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetCategoryFeedItemsResponse" message="tns:IMSLAService_GetCategoryFeedItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/GetCategoryContract" message="tns:IMSLAService_GetCategoryContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/GetCategoryContractResponse" message="tns:IMSLAService_GetCategoryContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContractSubscriptionService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMSLAService/ContractSubscriptionService" message="tns:IMSLAService_ContractSubscriptionService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMSLAService/ContractSubscriptionServiceResponse" message="tns:IMSLAService_ContractSubscriptionService_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomBinding_IMSLAService" type="tns:IMSLAService">
+    <wsp:PolicyReference URI="#CustomBinding_IMSLAService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TryLogin">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/TryLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/LogOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TryLoginMain">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/TryLoginMain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TryLoginUPA">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/TryLoginUPA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillDt">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/FillDt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteCMM">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/ExecuteCMM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchBOMaster">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/FetchBOMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap12:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBOMaster">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/SaveBOMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBOMaster">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/DeleteBOMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResolveTablesFromFile">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/ResolveTablesFromFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HandleException">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/HandleException" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeMethod">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/InvokeMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerivceInfo">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetSerivceInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerivceLog">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetSerivceLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerivceLogFromID">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetSerivceLogFromID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultSet">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetResultSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectValue">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetSelectValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectText">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetSelectText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryFeed">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetCategoryFeed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryFeedItems">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetCategoryFeedItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryContract">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/GetCategoryContract" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContractSubscriptionService">
+      <soap12:operation soapAction="http://tempuri.org/IMSLAService/ContractSubscriptionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MSLAService">
+    <wsdl:port name="CustomBinding_IMSLAService" binding="tns:CustomBinding_IMSLAService">
+      <soap12:address location="http://localhost:49633/MSLAService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:49633/MSLAService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

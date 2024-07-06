@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10DA1675-77D7-4CD2-8D92-1D9647C48456}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSLA.Server</RootNamespace>
+    <AssemblyName>MSLA.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
+    <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
+    <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
+    <SccProvider>Jazz Source Control Provider:{AC8810C5-F6E7-4145-83AA-FDFFF6F5506D}</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelPackage">
+      <HintPath>..\..\..\WorkingFolder2010\OpenXML\OpenXML.Web\bin\ExcelPackage.dll</HintPath>
+    </Reference>
+    <Reference Include="ImportFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ImportFile.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\WorkingFolder2010\OpenXML\OpenXML.Web\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\SimpleBOMaster.cs" />
+    <Compile Include="Base\DocObjectStructures.cs" />
+    <Compile Include="Base\MasterSaveBase.cs" />
+    <Compile Include="Base\VersionBase.cs" />
+    <Compile Include="BO\IMasterCriteria.cs" />
+    <Compile Include="BO\MasterBase.cs" />
+    <Compile Include="BO\ValidateBase.cs" />
+    <Compile Include="Constants\Constants.cs" />
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Data\DataAccessException.cs" />
+    <Compile Include="Data\DataCommand.cs" />
+    <Compile Include="Data\DataCommandResult.cs" />
+    <Compile Include="Data\DataConnect.cs" />
+    <Compile Include="Data\DataParameter.cs" />
+    <Compile Include="Data\DataParameterCollection.cs" />
+    <Compile Include="Data\DataPortal_Master.cs" />
+    <Compile Include="Data\DataTable.cs" />
+    <Compile Include="Data\DBConnectionType.cs" />
+    <Compile Include="Data\DBConnectorBase.cs" />
+    <Compile Include="Data\Dynamic.cs" />
+    <Compile Include="Data\SimpleTable.cs" />
+    <Compile Include="Data\SmartDataAdapter.cs" />
+    <Compile Include="Entity\ActionScript.cs" />
+    <Compile Include="Entity\EntityManager.cs" />
+    <Compile Include="Entity\EntityManager_Partial.cs" />
+    <Compile Include="Entity\EntityUnit.cs" />
+    <Compile Include="Entity\EntityUnitEventArgs.cs" />
+    <Compile Include="Exceptions\AccessRightsException.cs" />
+    <Compile Include="Exceptions\API\ExceptionLog.cs" />
+    <Compile Include="Exceptions\ICustomException.cs" />
+    <Compile Include="Exceptions\SaveException.cs" />
+    <Compile Include="Exceptions\ServiceExceptionHandler.cs" />
+    <Compile Include="Login\API\ApplicationTypes.cs" />
+    <Compile Include="Login\API\RefreshToken.cs" />
+    <Compile Include="Login\API\WebClient.cs" />
+    <Compile Include="Login\Logon.cs" />
+    <Compile Include="Login\LogonException.cs" />
+    <Compile Include="Login\LogonInfo.cs" />
+    <Compile Include="Login\LogonResult.cs" />
+    <Compile Include="Login\LogonService.cs" />
+    <Compile Include="Login\Logon_Partial.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules\BrokenRule.cs" />
+    <Compile Include="Rules\BrokenRuleCollection.cs" />
+    <Compile Include="Rules\IBrokenRules.cs" />
+    <Compile Include="Security\AccessRights.cs" />
+    <Compile Include="Security\AccessRights_Master.cs" />
+    <Compile Include="Security\Encryption64.cs" />
+    <Compile Include="Security\EncryptionUtility.cs" />
+    <Compile Include="Security\Enums.cs" />
+    <Compile Include="Security\IAccessRights.cs" />
+    <Compile Include="Security\IUser.cs" />
+    <Compile Include="Security\SimpleUserInfo.cs" />
+    <Compile Include="Tools\AutoCompleteBoxWorker.cs" />
+    <Compile Include="Tools\FeedWorker.cs" />
+    <Compile Include="Utilities\AppSettings.cs" />
+    <Compile Include="Utilities\FeedbackHelper.cs" />
+    <Compile Include="Utilities\FileExplorer.cs" />
+    <Compile Include="Utilities\NotificationMailWorker.cs" />
+    <Compile Include="Utilities\ReflectionHelper.cs" />
+    <Compile Include="Utilities\ReflectionHelperException.cs" />
+    <Compile Include="Utilities\RSSFeedWorker.cs" />
+    <Compile Include="Utilities\SubscriptionHelper.cs" />
+    <Compile Include="Utilities\TableHelper.cs" />
+    <Compile Include="Utilities\WinServiceInfo.cs" />
+    <Compile Include="Utilities\XMLFormatter.cs" />
+    <Compile Include="Utilities\XMLReader.cs" />
+    <Compile Include="Utilities\XMLWriter.cs" />
+    <Compile Include="Validations\CustomAttributes.cs" />
+    <Compile Include="Validations\ValidateException.cs" />
+    <Compile Include="XMLDataTypes\MasterItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Entity\ActionScriptFieldsExcluded.xml" />
+    <EmbeddedResource Include="Entity\ActionScriptTemplate.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

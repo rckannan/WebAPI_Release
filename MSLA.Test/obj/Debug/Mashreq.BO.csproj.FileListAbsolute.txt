@@ -1,0 +1,89 @@
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\bin\Debug\ImportFile.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\obj\Debug\ResolveAssemblyReference.cache
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+D:\Pjts\WebAPI_Release\MSLA.Test\obj\Debug\Mashreq.BO.dll
+D:\Pjts\WebAPI_Release\MSLA.Test\obj\Debug\Mashreq.BO.pdb
+D:\Pjts\WebAPI_Release\MSLA.Test\bin\Debug\Mashreq.BO.dll
+D:\Pjts\WebAPI_Release\MSLA.Test\bin\Debug\Mashreq.BO.pdb
+D:\Pjts\WebAPI_Release\MSLA.Test\bin\Debug\MSLA.Server.dll
+D:\Pjts\WebAPI_Release\MSLA.Test\bin\Debug\ImportFile.dll
+D:\Pjts\WebAPI_Release\MSLA.Test\bin\Debug\ExcelPackage.dll
+D:\Pjts\WebAPI_Release\MSLA.Test\bin\Debug\MSLA.Server.pdb
+D:\Pjts\WebAPI_Release\MSLA.Test\obj\Debug\Mashreq.BO.csprojResolveAssemblyReference.cache

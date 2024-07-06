@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="MSLA.Client_TestHarness.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:my="clr-namespace:MSLA.Client_TestHarness" 
+    xmlns:my1="clr-namespace:MSLA.Client.SmartTools;assembly=MSLA.Client" 
+             
+    xmlns:c1grid="clr-namespace:C1.Silverlight.DataGrid;assembly=C1.Silverlight.DataGrid" 
+    xmlns:c1="clr-namespace:C1.Silverlight;assembly=C1.Silverlight" xmlns:c1datetime="clr-namespace:C1.Silverlight.DateTimeEditors;assembly=C1.Silverlight.DateTimeEditors">
+
+    <Grid x:Name="LayoutRoot" Background="White" Height="514" Width="675"  >
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="74,9,0,0" Name="txtUserName" VerticalAlignment="Top" Width="176" Text="developer" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="74,40,0,0" Name="txtpassword" VerticalAlignment="Top" Width="176" Text="dev123" />
+        <sdk:Label Content="User Name" Height="16" HorizontalAlignment="Left" Margin="10,17,0,0" Name="label1" VerticalAlignment="Top" Width="77" />
+        <sdk:Label Content="Password" Height="16" HorizontalAlignment="Left" Margin="10,45,0,0" Name="label2" VerticalAlignment="Top" Width="77" />
+        <Button Content="Login" Height="23" HorizontalAlignment="Left" Margin="268,9,0,0" Name="cmdLogin" VerticalAlignment="Top" Width="47" Click="cmdLogin_Click" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="268,40,0,0" Name="cmdCancel" VerticalAlignment="Top" Width="47" />
+        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="321,17,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click_1" />
+        <sdk:DataGrid AutoGenerateColumns="True" Height="113" HorizontalAlignment="Left" Margin="32,393,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="474" />
+        <my1:SmartAlphaNumericTextBox Height="23" HorizontalAlignment="Left" Margin="491,34,0,0" Name="smartAlphaNumericTextBox1" VerticalAlignment="Top" Width="172" DecimalPlaces="2" Comma="True" />
+        <my1:SmartNumericTextBox Height="23" HorizontalAlignment="Right" Margin="0,9,12,0" Name="smartNumericTextBox1" VerticalAlignment="Top" Width="172" DefaultValue="" DecimalPlaces="2" Text="0" Comma="True" />
+        <my1:NumericTextBox Height="23" HorizontalAlignment="Left" Margin="491,59,0,0" Name="numericTextBox1" VerticalAlignment="Top" Width="172" DecimalPlaces="2" TextAsDecimal="0.00" Text="0.00" />
+        <my1:SmartAutoCompleteBox Height="26" HorizontalAlignment="Left" Margin="490,84,0,0" Name="smartAutoCompleteBox1" VerticalAlignment="Top" Width="173" ItemsSource="{Binding}"/>
+       <c1:C1ComboBox Height="28" HorizontalAlignment="Left" Margin="32,98,0,0" Name="c1ComboBox1" VerticalAlignment="Top" Width="200" />
+        <sdk:Label Height="28" HorizontalAlignment="Left" Margin="32,128,0,0" Name="label3" VerticalAlignment="Top" Width="120" />
+        <my1:SmartComboCumAutoCompleteBox HorizontalAlignment="Left" Margin="32,71,0,0" Name="smartComboCumAutoCompleteBox1" VerticalAlignment="Top" SelectedItemChanged="smartComboCumAutoCompleteBox1_SelectedItemChanged" />
+        <my1:SmartComboCumAutoCompleteBox HorizontalAlignment="Left" Margin="321,45,0,0" Name="smartComboCumAutoCompleteBox2" VerticalAlignment="Top" Width="145" Height="20" />
+        <my1:SmartAutoCompleteBox Height="28" HorizontalAlignment="Right" Margin="0,71,191,0" Name="smtCmbEquityName" VerticalAlignment="Top" Width="228" ItemsSource="{Binding}" />
+        <RadioButton Content="My Customers" GroupName="Customer" Height="16" HorizontalAlignment="Left" Margin="272,155,0,0" Name="rdMyCustomers" VerticalAlignment="Top"  Checked="rdMyCustomers_Checked"  />
+        <RadioButton Content="All Customers" GroupName="Customer" Height="16" HorizontalAlignment="Left" Margin="383,155,0,0" Name="rdAllCustomers" VerticalAlignment="Top"  Checked="rdAllCustomers_Checked" />
+        <my1:SmartComboCumAutoCompleteBox HorizontalAlignment="Left" Margin="292,253,0,0" Name="smartComboCumAutoCompleteBox3" VerticalAlignment="Top" Width="287" />
+        <my1:SmartComboCumAutoCompleteBox HorizontalAlignment="Left" Margin="292,208,0,0" Name="smtcmbCustomer" VerticalAlignment="Top" Width="287" />
+        <c1grid:C1DataGrid HorizontalAlignment="Left" Margin="20,199,0,0" Name="c1DataGrid1" VerticalAlignment="Top" Height="168" Width="242"  AutoGenerateColumns="True"/>
+        <my1:SmartDatePicker Height="23" HorizontalAlignment="Left" Margin="370,318,0,0" Name="smartDatePicker1" VerticalAlignment="Top" Width="120"/>
+        <my1:GridExportTool HorizontalAlignment="Left" Margin="20,169,0,0" Name="gridExportTool1" VerticalAlignment="Top" />
+        <!--<c1:DataGrid AutoGenerateColumns="False" Height="100" HorizontalAlignment="Left" Margin="340,228,0,0" Name="dataGrid2" VerticalAlignment="Top" Width="120" />-->
+        <!--<sdk:DataGrid AutoGenerateColumns="False" Height="180" HorizontalAlignment="Left" Margin="37,85,0,0" Name="dgvCustomer" VerticalAlignment="Top" Width="320">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn Binding="{Binding Path=RowValue[fldAccount_ID]}" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="Account ID" Width="90" />
+                <sdk:DataGridTextColumn Binding="{Binding Path=RowValue[fldAge]}" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="Age" IsReadOnly="False" Width="100" />
+                <sdk:DataGridTextColumn Binding="{Binding Path=RowValue[fldEmail]}" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="EMail" IsReadOnly="False" Width="100" />
+                <sdk:DataGridTextColumn Binding="{Binding Path=RowValue[fldNull]}" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="fldNull" IsReadOnly="False" Width="100" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="148,325,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />-->
+        <!--<TextBox Height="23" HorizontalAlignment="Left" Margin="66,150,0,0" Name="txtName" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="213,150,0,0" Name="txtAccID" VerticalAlignment="Top" Width="120" />
+        <Button Content="Fetch" Height="23" HorizontalAlignment="Left" Margin="92,197,0,0" Name="cmdGet" VerticalAlignment="Top" Width="75" Click="cmdGet_Click" />
+        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="242,197,0,0" Name="cmdSave" VerticalAlignment="Top" Width="75" Click="cmdSave_Click" />
+        <sdk:Label Height="91" HorizontalAlignment="Left" Margin="66,243,0,0" Name="lblStatus" VerticalAlignment="Top" Width="366" Content="Status" />
+        <sdk:DataGrid AutoGenerateColumns="False" Height="180" HorizontalAlignment="Left" Margin="153,279,0,0" Name="dgvCustomer" VerticalAlignment="Top" Width="444" >
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn Binding="{Binding fldAccount_ID, Mode=TwoWay}" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="Account ID" Width="90" />
+                <sdk:DataGridTextColumn Binding="{Binding fldAge, Mode=TwoWay}" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="Age" Width="100" />
+                <sdk:DataGridTextColumn Binding="{Binding fldEmail, Mode=TwoWay}" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="EMail" Width="100" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="359,150,0,0" Name="cmbEnType" VerticalAlignment="Top" Width="120" />-->
+        
+    </Grid>
+</UserControl>

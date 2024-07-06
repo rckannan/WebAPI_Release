@@ -1,0 +1,46 @@
+﻿<Client:MasterTemplate x:Class="MSLA.Client_TestHarness.Test1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:Client="clr-namespace:MSLA.Client.Templates;assembly=MSLA.Client"
+    mc:Ignorable="d"
+    d:DesignHeight="410" d:DesignWidth="559" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" 
+                       xmlns:my="clr-namespace:MSLA.Client.SmartTools;assembly=MSLA.Client" xmlns:c1="clr-namespace:C1.Silverlight;assembly=C1.Silverlight" xmlns:c1grid="clr-namespace:C1.Silverlight.DataGrid;assembly=C1.Silverlight.DataGrid">
+    
+    <Grid x:Name="LayoutRoot" Background="White" Height="379" Width="539">
+      <!--  <sdk:DataGrid AutoGenerateColumns="False" Height="124" HorizontalAlignment="Left" Margin="15,66,0,0" Name="dgvCustomer" VerticalAlignment="Top" Width="320" ItemsSource="{Binding Path=PropertyValue[TableOf_tblCustomerDetail],Mode=OneWay}">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn Binding="{Binding Path=RowValue[fldAccount_ID], Mode=TwoWay}"  CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="Account ID" Width="90" />
+                <sdk:DataGridTextColumn Binding="{Binding Path=RowValue[fldAge], Mode=TwoWay, ValidatesOnDataErrors=True}" IsReadOnly="False" CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="Age" Width="100" />
+                <sdk:DataGridTextColumn Binding="{Binding Path=RowValue[fldEmail], Mode=TwoWay, ValidatesOnDataErrors=True,NotifyOnValidationError=True,ValidatesOnExceptions=True}" IsReadOnly="False"  CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="EMail" Width="100" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>-->
+        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="15,207,0,0" Name="cmdSave" VerticalAlignment="Top" Width="75" Click="cmdSave_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" Name="txtName" VerticalAlignment="Top" Width="120" Text="{Binding Path=PropertyValue[fldName],Mode=TwoWay}" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="157,10,0,0" Name="txtAccID" VerticalAlignment="Top" Width="120" Text="{Binding Path=PropertyValue[fldAccount_ID], Mode=TwoWay}"/>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="291,10,0,0" Name="cmbEnType" VerticalAlignment="Top" Width="120" />
+        <sdk:Label Content="Status" Height="39" HorizontalAlignment="Left" Margin="10,39,0,0" Name="lblStatus" VerticalAlignment="Top" Width="392" />
+        <sdk:DataGrid Height="27" HorizontalAlignment="Left" Margin="15,245,0,0" Name="dgvBrokenRule" VerticalAlignment="Top" Width="115" >
+        </sdk:DataGrid>
+        <Button Content="Delete" Height="23" HorizontalAlignment="Left" Margin="96,207,0,0" Name="cmdDelete" VerticalAlignment="Top" Width="75" />
+        <my:SmartNumericTextBox Height="23" HorizontalAlignment="Left"  Text="{Binding Path=PropertyValue[fldAmt],Mode=TwoWay}" Margin="157,39,0,0" Name="smartNumericTextBox1" VerticalAlignment="Top" Width="120" DefaultValue="" />
+        <my:SmartAlphaNumericTextBox Height="23" HorizontalAlignment="Left" Margin="291,39,0,0" Name="smartAlphaNumericTextBox1" VerticalAlignment="Top" Width="120" NegativeAllowed="True" DecimalPlaces="2" />
+        <c1:C1ComboBox Height="28" HorizontalAlignment="Right" Margin="0,80,12,0" Name="c1ComboBox1" VerticalAlignment="Top" Width="189" AutoComplete="True"
+                ItemsSource="{Binding}"  DisplayMemberPath="RowValue[fldCounterPartyName]" SelectedValue="{Binding Path=PropertyValue[fldCounterParty_ID], Mode=TwoWay}"
+                SelectedValuePath="RowValue[fldCounterPartyName]"  />
+        <sdk:Label Height="28" HorizontalAlignment="Left" Margin="390,158,0,0" Name="label1" VerticalAlignment="Top" Width="120" />
+        <my:SmartDatePicker SelectedDate="{Binding Path=PropertyValue[fldDate]}" Height="23" HorizontalAlignment="Left" Margin="157,68,0,0" Name="smartDatePicker1" VerticalAlignment="Top" Width="120"/>
+        <c1grid:C1DataGrid   CanUserAddRows="False" CanUserEditRows="True" Height="143" HorizontalAlignment="Left" Margin="185,194,0,0" ItemsSource="{Binding Path=PropertyValue[TableOf_tblCustomerDetail],Mode=OneWay}" Name="c1DataGrid1" TabIndex="9" VerticalAlignment="Top" Width="325" AutoGeneratingColumn="c1DataGrid1_AutoGeneratingColumn" BeganEdit="c1DataGrid1_BeganEdit">
+
+            <c1grid:C1DataGrid.Columns>
+                <c1grid:DataGridTextColumn Binding="{Binding Path=RowValue[fldAccount_ID], Mode=TwoWay}"  CanUserResize="True" CanUserSort="True" Header="Account ID" Width="90" />
+                <c1grid:DataGridTextColumn Binding="{Binding Path=RowValue[fldAge], Mode=TwoWay, ValidatesOnDataErrors=True}" IsReadOnly="False" CanUserResize="True" CanUserSort="True" Header="Age" Width="100" />
+                <c1grid:DataGridTextColumn Binding="{Binding Path=RowValue[fldEmail], Mode=TwoWay, ValidatesOnDataErrors=True,NotifyOnValidationError=True,ValidatesOnExceptions=True}" IsReadOnly="False"  CanUserResize="True" CanUserSort="True" Header="EMail" Width="100" />
+                </c1grid:C1DataGrid.Columns>
+        </c1grid:C1DataGrid>
+        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="435,167,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+        <!--<c1:C1ComboBox AutoComplete="True" Height="28" HorizontalAlignment="Right" Margin="0,114,12,0" Name="c1ComboBox2" VerticalAlignment="Top" Width="189" />-->
+        <!--<my:NumericTextBox Height="23" HorizontalAlignment="Left" Margin="157,39,0,0" Name="numericTextBox1" VerticalAlignment="Top" Width="120" TextAsDecimal="0.00" DecimalPlaces="2" Text="0.00" />-->
+    </Grid>
+</Client:MasterTemplate>

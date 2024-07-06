@@ -1,0 +1,23 @@
+﻿<controls:ChildWindow x:Class="MSLA.Client.SmartTools.ItemSelector"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           Width="400" Height="300" 
+           Title="ItemSelector">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition />
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="cmdCancel" Content="Cancel" Click="CancelButton_Click" Width="75" Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3" TabIndex="6"/>
+        <Button x:Name="cmdOK" Content="OK" Click="OKButton_Click" Width="75" Height="23" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="3" TabIndex="7"/>
+        <RadioButton GroupName="SelectorGroup" Content="Starts with" Height="16" HorizontalAlignment="Left" Name="rdStarts" VerticalAlignment="Center" Grid.Row="1" Checked="rd_Checked" TabIndex="2"/>
+        <RadioButton GroupName="SelectorGroup" Content="Contains" Height="16" HorizontalAlignment="Center" Name="rdContains" VerticalAlignment="Center" Margin="87,7,223,7" Grid.Row="1" Checked="rd_Checked" TabIndex="3"/>
+        <RadioButton GroupName="SelectorGroup" Content="Ends With" Height="16" HorizontalAlignment="right" Name="rdEnds" VerticalAlignment="Center" Margin="0,7,144,7" Grid.Row="1" Checked="rd_Checked" TabIndex="4" />
+        <ListBox HorizontalAlignment="Stretch" Name="lstOptions" VerticalAlignment="Stretch" Grid.Row="2" ItemsSource="{Binding}"  TabIndex="5"/>
+        <TextBox Name="txtSearch" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="23" KeyUp="txtSearch_KeyUp" TabIndex="1" />
+    </Grid>
+</controls:ChildWindow>

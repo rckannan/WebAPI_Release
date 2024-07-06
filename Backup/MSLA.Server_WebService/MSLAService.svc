@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MSLA.Server_WebService.MSLAService" CodeBehind="MSLAService.svc.cs" %>

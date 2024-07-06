@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/MSLA.Server_WebService" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Tools" />
+  <xs:element name="TryLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q1:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TryLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="TryLoginResult" nillable="true" type="q2:SimpleUserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogOut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q3:SimpleUserInfo" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogOutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LogOutResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TryLoginMain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwd" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q5:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TryLoginMainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="TryLoginMainResult" nillable="true" type="q6:SimpleUserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TryLoginUPA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q7:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TryLoginUPAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="TryLoginUPAResult" nillable="true" type="q8:SimpleUserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillDt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CmdText" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cmdType" type="q9:EnDataCommandType" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cmdParams" nillable="true" type="q10:ArrayOfDataParameter" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cnType" type="q11:DBConnectionType" />
+        <xs:element minOccurs="0" name="cmdTimeout" type="xs:int" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="myUser" nillable="true" type="q12:SimpleUserInfo" />
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q13:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillDtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="FillDtResult" nillable="true" type="q14:SimpleTable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteCMM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CmdText" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cmdType" type="q15:EnDataCommandType" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cmdParams" nillable="true" type="q16:ArrayOfDataParameter" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cnType" type="q17:DBConnectionType" />
+        <xs:element minOccurs="0" name="cmdTimeout" type="xs:int" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="myUser" nillable="true" type="q18:SimpleUserInfo" />
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q19:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteCMMResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="ExecuteCMMResult" nillable="true" type="q20:ArrayOfDataParameter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteScalar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CmdText" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cmdType" type="q21:EnDataCommandType" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cmdParams" nillable="true" type="q22:ArrayOfDataParameter" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cnType" type="q23:DBConnectionType" />
+        <xs:element minOccurs="0" name="cmdTimeout" type="xs:int" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="myUser" nillable="true" type="q24:SimpleUserInfo" />
+        <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q25:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteScalarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExecuteScalarResult" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FetchBOMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/MSLA.Server_WebService" minOccurs="0" name="myBOCriteria" nillable="true" type="q26:MasterCriteriaBase" />
+        <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q27:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FetchBOMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" minOccurs="0" name="FetchBOMasterResult" nillable="true" type="q28:SimpleBOMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveBOMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" minOccurs="0" name="myBO" nillable="true" type="q29:SimpleBOMaster" />
+        <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q30:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveBOMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" minOccurs="0" name="SaveBOMasterResult" nillable="true" type="q31:SimpleBOMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBOMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" minOccurs="0" name="myBO" nillable="true" type="q32:SimpleBOMaster" />
+        <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q33:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBOMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" minOccurs="0" name="DeleteBOMasterResult" nillable="true" type="q34:SimpleBOMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResolveTablesFromFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FileStreamInfo" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="FileExtension" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FilePassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q35:SimpleUserInfo" />
+        <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="REquest_ID" type="q36:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResolveTablesFromFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ResolveTablesFromFileResult" nillable="true" type="q37:ArrayOfKeyValueOfstringSimpleTable4VjSJHGN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HandleException">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q38:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HandleExceptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HandleExceptionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeMethod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="assemblyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="objectNamespace" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="className" nillable="true" type="xs:string" />
+        <xs:element xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="constructorArgs" nillable="true" type="q39:ArrayOfanyType" />
+        <xs:element minOccurs="0" name="methodName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="methodArgs" nillable="true" type="q40:ArrayOfanyType" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q41:SimpleUserInfo" />
+        <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q42:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeMethodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="InvokeMethodResult" nillable="true" type="q43:SimpleTable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSerivceInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q44:SimpleUserInfo" />
+        <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q45:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSerivceInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="GetSerivceInfoResult" nillable="true" type="q46:SimpleTable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSerivceLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q47:SimpleUserInfo" />
+        <xs:element minOccurs="0" name="ServiceName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q48:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSerivceLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSerivceLogResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSerivceLogFromID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q49:SimpleUserInfo" />
+        <xs:element minOccurs="0" name="Service_ID" type="xs:long" />
+        <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q50:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSerivceLogFromIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSerivceLogFromIDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetResultSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collectionMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Filter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cnType" type="q51:DBConnectionType" />
+        <xs:element minOccurs="0" name="valueMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="displayMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="queryText" nillable="true" type="xs:string" />
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q52:SimpleUserInfo" />
+        <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q53:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetResultSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetResultSetResult" nillable="true" type="q54:ArrayOfKeyValueOflongstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSelectValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collectionMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Filter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cnType" type="q55:DBConnectionType" />
+        <xs:element minOccurs="0" name="valueMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="displayMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="queryText" nillable="true" type="xs:string" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q56:SimpleUserInfo" />
+        <xs:element xmlns:q57="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q57:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSelectValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSelectValueResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSelectText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collectionMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Filter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="cnType" type="q58:DBConnectionType" />
+        <xs:element minOccurs="0" name="valueMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="displayMember" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="selectedVal" type="xs:long" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q59:SimpleUserInfo" />
+        <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q60:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSelectTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSelectTextResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryFeed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Category_ID" type="xs:long" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q61:SimpleUserInfo" />
+        <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q62:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryFeedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCategoryFeedResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryFeedItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Category_ID" type="xs:long" />
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q63:SimpleUserInfo" />
+        <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q64:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryFeedItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/MSLA.Server.Tools" minOccurs="0" name="GetCategoryFeedItemsResult" nillable="true" type="q65:ArrayOfFeedItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Category_ID" type="xs:long" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q66:SimpleUserInfo" />
+        <xs:element xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q67:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="GetCategoryContractResult" nillable="true" type="q68:SimpleTable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContractSubscriptionService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Category_ID" type="xs:long" />
+        <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsHTML" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FileStreamInfo" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/MSLA.Server.Data" minOccurs="0" name="testValue" nillable="true" type="q69:SimpleTable" />
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q70:SimpleUserInfo" />
+        <xs:element xmlns:q71="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Request_ID" type="q71:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContractSubscriptionServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ContractSubscriptionServiceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

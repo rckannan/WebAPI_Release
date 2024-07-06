@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Base" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Rules" />
+  <xs:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" />
+  <xs:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="SimpleBOMaster">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MSLA.Server.Rules" minOccurs="0" name="BrokenDeleteRules" nillable="true" type="q1:ArrayOfBrokenRule" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MSLA.Server.Rules" minOccurs="0" name="BrokenSaveRules" nillable="true" type="q2:ArrayOfBrokenRule" />
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MasterType" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyBag" nillable="true" type="q3:ArrayOfKeyValueOfstringanyType" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyIsReadOnly" nillable="true" type="q4:ArrayOfKeyValueOfstringboolean" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/MSLA.Server.Security" minOccurs="0" name="UserInfo" nillable="true" type="q5:SimpleUserInfo" />
+      <xs:element minOccurs="0" name="fldMasterItem_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="fldSerializedMaster_ID" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimpleBOMaster" nillable="true" type="tns:SimpleBOMaster" />
+</xs:schema>

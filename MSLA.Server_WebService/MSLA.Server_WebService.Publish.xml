@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://localhost/MashreqCP/MSLA_WebService" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Default Web Site/MashreqCP/MSLA_WebService" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="False" msdeployMarkAsApp="True" profileName="Profile1" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/MSLA.Server.dll" publishTime="05/11/2011 13:43:48" />
+    <file relUrl="bin/ImportFile.dll" publishTime="10/01/2010 17:34:10" />
+    <file relUrl="MSLA.Client_TestHarnessTestPage.html" publishTime="09/09/2010 19:02:31" />
+    <file relUrl="MSLA.Client_TestHarnessTestPage.aspx" publishTime="09/09/2010 19:02:31" />
+    <file relUrl="bin/MSLA.Server_WebService.pdb" publishTime="05/11/2011 13:43:54" />
+    <file relUrl="ClientBin/MSLA.Client_TestHarness.xap" publishTime="05/11/2011 13:44:43" />
+    <file relUrl="bin/MSLA.Server_WebService.dll" publishTime="05/11/2011 13:43:54" />
+    <file relUrl="GetAttachment.aspx" publishTime="02/14/2011 16:54:18" />
+    <file relUrl="ClientBin/Debug/MSLA.Client_TestHarness.xap" publishTime="09/09/2010 19:02:30" />
+    <file relUrl="Web.config" publishTime="05/11/2011 13:45:33" />
+    <file relUrl="clientaccesspolicy.xml" publishTime="09/09/2010 19:02:31" />
+    <file relUrl="bin/ExcelPackage.dll" publishTime="10/01/2010 17:34:10" />
+    <file relUrl="bin/MSLA.Server.pdb" publishTime="05/11/2011 13:43:48" />
+    <file relUrl="MSLAService.svc" publishTime="09/09/2010 19:02:31" />
+    <file relUrl="Silverlight.js" publishTime="09/09/2010 19:02:31" />
+    <file relUrl="SiteService.asmx" publishTime="02/14/2011 16:54:18" />
+  </publishProfile>
+</publishData>

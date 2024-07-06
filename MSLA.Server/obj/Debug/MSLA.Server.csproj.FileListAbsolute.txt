@@ -1,0 +1,49 @@
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server\obj\Debug\ResolveAssemblyReference.cache
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb
+D:\Pjts\WebAPI_Release\MSLA.Server\bin\Debug\MSLA.Server.dll
+D:\Pjts\WebAPI_Release\MSLA.Server\bin\Debug\MSLA.Server.pdb
+D:\Pjts\WebAPI_Release\MSLA.Server\obj\Debug\MSLA.Server.dll
+D:\Pjts\WebAPI_Release\MSLA.Server\obj\Debug\MSLA.Server.pdb

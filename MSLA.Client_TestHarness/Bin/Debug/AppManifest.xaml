@@ -1,0 +1,25 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="MSLA.Client_TestHarness" EntryPointType="MSLA.Client_TestHarness.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="MSLA.Client_TestHarness" Source="MSLA.Client_TestHarness.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.Data" Source="C1.Silverlight.Data.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.DataGrid" Source="C1.Silverlight.DataGrid.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.DateTimeEditors" Source="C1.Silverlight.DateTimeEditors.dll" />
+    <AssemblyPart x:Name="C1.Silverlight" Source="C1.Silverlight.dll" />
+    <AssemblyPart x:Name="ComponentArt.Silverlight.UI.Common" Source="ComponentArt.Silverlight.UI.Common.dll" />
+    <AssemblyPart x:Name="MSLA.Client" Source="MSLA.Client.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.NetTcp" Source="System.ServiceModel.NetTcp.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.PollingDuplex" Source="System.ServiceModel.PollingDuplex.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input" Source="System.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="ComponentArt.Silverlight.UI.Navigation" Source="ComponentArt.Silverlight.UI.Navigation.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.Pdf" Source="C1.Silverlight.Pdf.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.Extensions" Source="System.ServiceModel.Extensions.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.Zip" Source="C1.Silverlight.Zip.dll" />
+  </Deployment.Parts>
+</Deployment>

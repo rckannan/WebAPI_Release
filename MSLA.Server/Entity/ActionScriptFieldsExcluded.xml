@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExclusionList>
+    <StoredProcedure>
+        <MasterAddUpdate>
+            <UpdateStatement>fldCompany_ID</UpdateStatement>
+        </MasterAddUpdate>
+        <DocControlAddUpdate>
+            <UpdateStatement>fldCompany_ID,fldBranch_ID,fldType,fldYear,fldMonth,fldV_ID,fldStatus</UpdateStatement>
+            <Parameters>fldMonth,fldV_ID</Parameters>
+            <FetchStatement>fldV_ID,fldDocType,fldDocObject_ID,fldEnteredBy,fldApprovedBy,fldAuthorisedBy</FetchStatement>
+        </DocControlAddUpdate>
+    </StoredProcedure>
+</ExclusionList>

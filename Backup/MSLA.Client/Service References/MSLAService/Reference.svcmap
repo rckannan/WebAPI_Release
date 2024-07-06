@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f44f2dd1-9ddd-4fa3-9bd4-d9beb66d68c4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49633/MSLAService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="58706971-c7a5-4f94-81b3-974810fc2ea5" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="cee2d042-829a-4a23-9b09-10f25c3f6350" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="28300fce-f5dd-410a-aba0-a31db5ea45ad" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="MSLA.Server.Security.xsd" MetadataType="Schema" ID="1db751ff-a1be-45d2-9296-4864c7efc8b2" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="MSLA.Server.Data.xsd" MetadataType="Schema" ID="bf06ee6d-f83e-4ea3-a2f8-3fb14e7c14ee" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="683252d3-a66c-4afb-ba26-32ee6f8282c5" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="System.xsd" MetadataType="Schema" ID="37ae81bc-ca20-4955-be82-d63aaaef9064" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="MSLA.Server_WebService.xsd" MetadataType="Schema" ID="57289923-d8c6-4f19-ae7a-54d6c7f421fc" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="MSLA.Server.Base.xsd" MetadataType="Schema" ID="a10e48ed-5015-49ca-a72c-6efeec717299" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="MSLA.Server.Rules.xsd" MetadataType="Schema" ID="15112949-d5d6-4770-ad82-cc6049615eeb" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+    <MetadataFile FileName="MSLA.Server.Tools.xsd" MetadataType="Schema" ID="1a70cce8-756e-4db1-962b-e26824c4b282" SourceId="1" SourceUrl="http://localhost:49633/MSLAService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

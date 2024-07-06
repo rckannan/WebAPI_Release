@@ -1,0 +1,1 @@
+D:\Pjts\WebAPI_Release\MSLA.API\obj\Debug\MSLA.API.csprojResolveAssemblyReference.cache

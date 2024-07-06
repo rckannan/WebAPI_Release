@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MSLA.Server.Rules" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MSLA.Server.Rules" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49633/MSLAService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfBrokenRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BrokenRule" type="tns:BrokenRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBrokenRule" nillable="true" type="tns:ArrayOfBrokenRule" />
+  <xs:complexType name="BrokenRule">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="_ClassName" nillable="true" type="xs:string" />
+      <xs:element name="_ClassProperty" nillable="true" type="xs:string" />
+      <xs:element name="_ErrorRowNo" type="xs:int" />
+      <xs:element name="_GridName" nillable="true" type="xs:string" />
+      <xs:element name="_IsWarning" type="xs:boolean" />
+      <xs:element name="_RuleDesc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BrokenRule" nillable="true" type="tns:BrokenRule" />
+</xs:schema>

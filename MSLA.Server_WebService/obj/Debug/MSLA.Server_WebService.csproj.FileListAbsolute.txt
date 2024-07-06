@@ -1,0 +1,80 @@
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+F:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+D:\WorkingFolderCSW03_SVN\MashreqBank\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+D:\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+C:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+D:\Manoj\WorkingFolderCSW03_SVN\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+F:\WorkingFolderCSW03_SVN\Release_Mashreq\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+E:\CustomerPortalWorkingFolder\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+E:\Kannan\RTC\DEV\CustomerPortal\Customer Portal\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\obj\Debug\ResolveAssemblyReference.cache
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+E:\CustomerPortal\API test\MSLA_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll.config
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\bin\MSLA.Server.dll
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\bin\ExcelPackage.dll
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\bin\MSLA.Server.pdb
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.csprojResolveAssemblyReference.cache
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+D:\Pjts\WebAPI_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb

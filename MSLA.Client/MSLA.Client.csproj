@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2258536F-600F-40A0-8BDE-0C95F5B9BAF0}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSLA.Client</RootNamespace>
+    <AssemblyName>MSLA.Client</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
+    <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
+    <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
+    <SccProvider>Jazz Source Control Provider:{AC8810C5-F6E7-4145-83AA-FDFFF6F5506D}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Silverlight, Version=4.0.20101.73, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="C1.Silverlight.Data, Version=4.0.20101.73, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="C1.Silverlight.DataGrid, Version=4.0.20101.73, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="C1.Silverlight.DateTimeEditors, Version=4.0.20101.73, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="C1.Silverlight.Pdf, Version=4.0.20101.73, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="C1.Silverlight.Toolbar, Version=4.0.20101.73, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="C1.Silverlight.Zip, Version=4.0.20101.73, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="ComponentArt.Silverlight.UI.Common, Version=2010.1.2381.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL" />
+    <Reference Include="ComponentArt.Silverlight.UI.Data, Version=2010.1.2381.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL" />
+    <Reference Include="ComponentArt.Silverlight.UI.Input, Version=2010.1.2381.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL" />
+    <Reference Include="ComponentArt.Silverlight.UI.Navigation, Version=2010.1.2381.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\MasterBase.cs" />
+    <Compile Include="Base\TemplateEventArgs.cs" />
+    <Compile Include="Data\C1DataTable.cs" />
+    <Compile Include="Data\DataCommand.cs" />
+    <Compile Include="Data\DataConnect.cs" />
+    <Compile Include="Data\DataTable.cs" />
+    <Compile Include="Data\Dynamic.cs" />
+    <Compile Include="Exceptions\ExceptionHandler.cs" />
+    <Compile Include="ExportFormats\Html\C1DataGridHtmlExtension.cs" />
+    <Compile Include="ExportFormats\Html\C1PrintHelper.cs" />
+    <Compile Include="ExportFormats\pdf\C1DataGridPdfExtension.cs" />
+    <Compile Include="ExportFormats\pdf\PdtUtils.cs" />
+    <Compile Include="Login\LogonInfo.cs" />
+    <Compile Include="Security\EncryptionUtility.cs" />
+    <Compile Include="SmartTools\AutoCompleteBoxHelper.cs" />
+    <Compile Include="SmartTools\GridExportTool.xaml.cs">
+      <DependentUpon>GridExportTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SmartTools\ItemSelector.xaml.cs">
+      <DependentUpon>ItemSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridColumns\SmartAlphaNumericColumn.cs" />
+    <Compile Include="SmartTools\SmartAutoCompleteBox.cs" />
+    <Compile Include="SmartTools\SmartComboCumAutoCompleteBox.xaml.cs">
+      <DependentUpon>SmartComboCumAutoCompleteBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SmartTools\SmartDatePicker.cs" />
+    <Compile Include="DataGridColumns\SmartNumericColumn.cs" />
+    <Compile Include="SmartTools\waitEffect.xaml.cs">
+      <DependentUpon>waitEffect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DateFormat.cs" />
+    <Compile Include="Utilities\DecimalTypeConverter.cs" />
+    <Compile Include="SmartTools\NumericTextBox.cs" />
+    <Compile Include="SmartTools\SmartAlphaNumericTextBox.cs" />
+    <Compile Include="SmartTools\SmartNumericTextBox.cs" />
+    <Compile Include="Template\MasterTemplate.cs" />
+    <Compile Include="MSLAService\MSLAServiceClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\MSLAService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Repository.cs" />
+    <Compile Include="Utilities\RSSWorker.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MSLAService\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\MSLA.Server.Base.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\MSLA.Server.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\MSLA.Server.Rules.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\MSLA.Server.Security.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\MSLA.Server.Tools.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\MSLA.Server_WebService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\service.wsdl" />
+    <None Include="Service References\MSLAService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MSLAService\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="SmartTools\Black_triangle.png" />
+    <None Include="Service References\MSLAService\MSLA.Client.MSLAService.SimpleBODoc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MSLAService\configuration91.svcinfo" />
+    <None Include="Service References\MSLAService\configuration.svcinfo" />
+    <None Include="Service References\MSLAService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Resources\ExcelTemplate.xml" />
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MSLAService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SmartTools\GridExportTool.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SmartTools\ItemSelector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SmartTools\SmartComboCumAutoCompleteBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SmartTools\waitEffect.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
